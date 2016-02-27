@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -55,6 +56,12 @@
                                     <constraint firstAttribute="height" constant="128" id="3rE-ar-VuY"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-IB-P1Q">
+                                <rect key="frame" x="0.0" y="349" width="600" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aSD-IB-P1Q" secondAttribute="height" multiplier="15:8" id="rfZ-uu-ezD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -65,6 +72,7 @@
                             <constraint firstItem="QSK-dg-0El" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="90S-6c-UA0"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95k-Ib-wpb"/>
                             <constraint firstItem="aDr-Af-XQF" firstAttribute="top" secondItem="QSK-dg-0El" secondAttribute="bottom" constant="8" id="CdC-mu-BDO"/>
+                            <constraint firstItem="aSD-IB-P1Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LpP-Jf-sgI"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="width" secondItem="lOe-My-ttr" secondAttribute="width" multiplier="2" constant="8" id="MMr-BX-RWL"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MrZ-IH-LBD"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PaQ-Rv-j4H"/>
@@ -73,7 +81,9 @@
                             <constraint firstItem="QSK-dg-0El" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rfj-DA-kCY"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="width" secondItem="aDr-Af-XQF" secondAttribute="width" multiplier="2" constant="8" id="SWP-mz-Eyb"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SeJ-EQ-SJp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aSD-IB-P1Q" secondAttribute="top" constant="123" id="T2m-yW-fmh"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TKg-BR-4wK"/>
+                            <constraint firstAttribute="trailing" secondItem="aSD-IB-P1Q" secondAttribute="trailing" id="ado-sa-ELT"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLB-sb-ocb"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="width" secondItem="QSK-dg-0El" secondAttribute="width" id="bl0-an-0xv"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="leading" secondItem="QSK-dg-0El" secondAttribute="leading" id="cEW-3A-vSP"/>
@@ -81,6 +91,7 @@
                             <constraint firstItem="lOe-My-ttr" firstAttribute="leading" secondItem="QSK-dg-0El" secondAttribute="leading" id="hvh-fb-I78"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="bottom" secondItem="QSK-dg-0El" secondAttribute="top" constant="22" id="lbQ-ci-sDP"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o82-VP-o9K"/>
+                            <constraint firstItem="aSD-IB-P1Q" firstAttribute="top" secondItem="aDr-Af-XQF" secondAttribute="bottom" constant="75" id="qsY-E3-4xw"/>
                             <constraint firstItem="lOe-My-ttr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rtP-Tk-nB8"/>
                             <constraint firstItem="QSK-dg-0El" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yod-US-MHL"/>
                         </constraints>
@@ -100,6 +111,7 @@
                                 <exclude reference="cEW-3A-vSP"/>
                                 <exclude reference="car-td-0ge"/>
                                 <exclude reference="lbQ-ci-sDP"/>
+                                <exclude reference="T2m-yW-fmh"/>
                             </mask>
                         </variation>
                     </view>
@@ -109,4 +121,7 @@
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="180" height="165"/>
+    </resources>
 </document>
